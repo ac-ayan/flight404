@@ -1,6 +1,6 @@
 import "./style.css"
 import * as THREE from "./three.min.js"
-import * as TweenMax from "./TweenMax.min.js"
+import "./TweenMax.min.js"
 
 //////////////////////////* Color Palette///////////////////////
 
