@@ -1,15 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ThreeJS Starter</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-    <canvas class="webgl"></canvas>
-    <script type="text/javascript" src="./three.min.js"></script>
-    <script type="text/javascript" src="./script.js"></script>
-    
-</body>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ThreeJS Starter</title>
+        <link rel="stylesheet" href="./style.css">
+        <!-- <link rel="stylesheet" href="./demo.css">
+        <link rel="stylesheet" href="./game.css"> -->
+    </head>
+
+    <body>
+        <div class="game-holder" id="gameHolder">
+            <div class="header">
+                <h1><span>the</span>Flight404</h1>
+                <h2>fly it to the mainland</h2>
+                <div class="score" id="score">
+                    <div class="score__content" id="level">
+                        <div class="score__label">level</div>
+                        <div class="score__value score__value--level" id="levelValue">1</div>
+                        <svg class="level-circle" id="levelCircle" viewbox="0 0 200 200">
+                            <circle id="levelCircleBgr" r="80" cx="100" cy="100" fill="none" stroke="#d1b790"
+                                stroke-width="24px" />
+                            <circle id="levelCircleStroke" r="80" cx="100" cy="100" fill="none" #f25346 stroke="#68c3c0"
+                                stroke-width="14px" stroke-dasharray="502" />
+                        </svg>
+                    </div>
+                    <div class="score__content" id="dist">
+                        <div class="score__label">distance</div>
+                        <div class="score__value score__value--dist" id="distValue">000</div>
+                    </div>
+                    <div class="score__content" id="energy">
+                        <div class="score__label">energy</div>
+                        <div class="score__value score__value--energy" id="energyValue">
+                            <div class="energy-bar" id="energyBar"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="message message--replay" id="replayMessage">Click to Replay</div>
+            <div class="message message--instructions" id="instructions">Grab the blue pills<span>avoid the red
+                    ones</span></div>
+        </div>
+        <canvas class="webgl"></canvas>
+
+        <script type="text/javascript" src="./three.min.js"></script>
+        <script type="text/javascript" src="./TweenMax.min.js"></script>
+        <script type="text/javascript" src="./script.js"></script>
+
+    </body>
+
 </html>
