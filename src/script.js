@@ -1,6 +1,5 @@
-import './style.css'
-// import * as THREE from "three"
-
+import "./style.css"
+import * as THREE from "./three.min.js"
 
 //////////////////////////* Color Palette///////////////////////
 
@@ -480,6 +479,12 @@ const renderer = new THREE.WebGLRenderer({
 renderer.setSize(sizes.width, sizes.height)
 renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
 renderer.shadowMap.enabled = true;
+
+
+// // Add the DOM element of the renderer to the 
+// // container we created in the HTML
+//  var container = document.getElementById('world');
+// container.appendChild(renderer.domElement);
 /**
  * Animate
  */
