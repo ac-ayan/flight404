@@ -84,7 +84,7 @@ function resetGame() {
 
         status: "playing",
     };
-    // fieldLevel.innerHTML = Math.floor(game.level);
+    fieldLevel.innerHTML = Math.floor(game.level);
 }
 
 
